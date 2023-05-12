@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Simple Calculator</title>
+</head>
+<body>
+	<h2>Simple Calculator</h2>
+	<input type="text" id="display" placeholder="0" onkeyup="calculate(event)">
+	<h3 id="result"></h3>
+	<table>
+		<tr>
+			<td><input type="button" value="+" onclick="addToDisplay('+')"></td>
+            <td><input type="button" value="-" onclick="addToDisplay('-')"></td>
+            <td><input type="button" value="*" onclick="addToDisplay('*')"></td>
+            <td><input type="button" value="/" onclick="addToDisplay('/')"></td>
+            <td><input type="button" value="C" onclick="clearDisplay()"></td>
+            <td colspan="4"><input type="button" value="=" onclick="calculate()"></td>
+		</tr>
+	</table>
+	<script src="script.js"></script>
+</body>
+</html>
